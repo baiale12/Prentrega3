@@ -1,0 +1,70 @@
+nav {
+  background-color: $secondary-color;
+  padding: 10px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+  margin-right: 20px;
+}
+
+a {
+  color: $text-color;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Esta parte es para definir el segundo nav de la pagina Servicios */
+.nav-container {
+  @extend %common-styles;
+  background-color: $background-color;
+  width: 30%;
+}
+
+.nav-wrapper {
+  ul {
+    list-style-type: none;
+    display: flex;
+
+    li {
+      margin-left: 10px;
+
+      &:first-child {
+        margin-left: 10px;
+      }
+
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+/* Estilos para .nav-right */
+.nav-right {
+  @extend %common-styles;
+  background-color: $secondnav-color;
+  font-size: small;
+  padding: 0;
+  position: fixed;
+  width: auto;
+  transform: translateX(50%);
+  /* Ajustar para centrar exactamente */
+
+  /* Media queries para hacer el nav responsive */
+  @media (max-width: 600px) {
+    width: 270px;
+    font-size: 0.7em;
+    /* Ajusta el tamaño de fuente */
+  }
+
+}

@@ -1,0 +1,7 @@
+# Ignorar archivos de docx
+*.docx
+
+# Ignorar directorios de compilación
+/estilos/
+
+

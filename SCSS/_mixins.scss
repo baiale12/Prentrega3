@@ -1,0 +1,35 @@
+@mixin grid-item($width, $height, $border-radius: 0, $box-shadow: none) {
+    width: $width;
+    height: $height;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+    border: $border2;
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+// Estilo para contendedor de las fotos
+.grid-item {
+    @include grid-item(300px, 300px, 30%, 0 4px 8px rgba(0, 0, 0, 0.2));
+
+     // Media query para pantallas pequeñas
+     @media (max-width: 450px) {
+        @include grid-item(100px, 100px, 10%, 0 2px 4px rgba(0, 0, 0, 0.1));
+    }
+ 
+    // Media query para pantallas pequeñas
+    @media (min-width: 450px) and (max-width: 600px) {
+        @include grid-item(150px, 150px, 15%, 0 2px 4px rgba(0, 0, 0, 0.1));
+    }
+
+    // Media query para pantallas medianas
+    @media (min-width: 601px) and (max-width: 1200px) {
+        @include grid-item(200px, 200px, 20%, 0 3px 6px rgba(0, 0, 0, 0.15));
+    }
+
+    // Media query para pantallas grandes
+    @media (min-width: 1201px) {
+        @include grid-item(300px, 300px, 30%, 0 4px 8px rgba(0, 0, 0, 0.2));
+    }
+}

@@ -1,0 +1,41 @@
+/* Estilos para el form */
+form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+        margin-bottom: 10px;
+    }
+
+    input[type="text"],
+    select {
+        @extend %common-input;
+    }
+
+    input[type="submit"] {
+        @extend %common-submit;
+        width: auto;
+        padding: 5px 20px;
+    }
+
+    input,
+    textarea {
+        margin-bottom: 10px;
+        width: 80%;
+        padding: 5px;
+    }
+}
+
+/* Caja fixed para reporte de acontecimientos de Seguridad */
+.box {
+    position: fixed;
+    margin-top: 5%;
+    top: 0;
+    right: 0;
+    width: 20%;
+    background-color: $background-color;
+    padding: 20px;
+    text-align: center;
+}
