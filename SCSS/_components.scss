@@ -142,10 +142,6 @@ video {
 /* Estilos del icono de hamburguesa */
 .menu-icon {
     display: none;
-    font-size: map-get($font-sizes, medium);
-    color: $text-color;
-    padding: 14px 20px;
-    cursor: pointer;
 }
 
 /* Para iframe responsive*/

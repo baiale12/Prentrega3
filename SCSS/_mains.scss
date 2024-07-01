@@ -18,3 +18,39 @@ main {
     }
   }
 }
+
+main {
+  #carousel {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+
+    > div {
+      display: inline-block;
+      margin: 10px 150px;
+
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+main {
+  #carousel2 {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+
+    > div {
+      display: inline-block;
+      max-width: 30%;
+      height: auto;
+      display: block;
+      margin: auto;
+      }
+    }
+  }

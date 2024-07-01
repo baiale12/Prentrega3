@@ -104,6 +104,35 @@ main ul li img {
   margin: 0 auto;
 }
 
+main #carousel {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+main #carousel > div {
+  display: inline-block;
+  margin: 10px 150px;
+}
+main #carousel > div img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+main #carousel2 {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+main #carousel2 > div {
+  display: inline-block;
+  max-width: 30%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
 .grid-item {
   width: 300px;
   height: 300px;
@@ -194,6 +223,7 @@ footer {
   }
   nav {
     padding: 5px;
+    background-color: #45a049;
   }
   nav ul {
     display: none;
@@ -201,11 +231,13 @@ footer {
   .nav-container {
     display: none;
   }
-  .menu-icon {
+  #menu-icon {
     display: block;
+    font-size: 30px;
+    color: white;
     cursor: pointer;
   }
-  .menu-icon:hover + ul,
+  #menu-icon:hover + ul,
   nav:hover ul {
     display: block;
   }
@@ -402,10 +434,6 @@ video {
 /* Estilos del icono de hamburguesa */
 .menu-icon {
   display: none;
-  font-size: 30px;
-  color: white;
-  padding: 14px 20px;
-  cursor: pointer;
 }
 
 /* Para iframe responsive*/
