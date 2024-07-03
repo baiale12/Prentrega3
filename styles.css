@@ -1,0 +1,573 @@
+@charset "UTF-8";
+body {
+  font-family: "Space Mono", monospace;
+}
+
+h1 {
+  margin-left: 10px;
+  font-size: 2.5rem !important;
+  color: #c52c2c !important;
+  font-weight: bold !important;
+  animation-duration: 6s;
+  animation-name: aparecer;
+}
+
+header {
+  display: flex;
+  align-items: center;
+}
+header img {
+  width: 50px;
+  height: auto;
+  animation-duration: 2s;
+  animation-name: aparecer;
+}
+
+nav {
+  background-color: #333;
+  padding: 10px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+  margin-right: 20px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Esta parte es para definir el segundo nav de la pagina Servicios */
+.nav-container {
+  background-color: #fff;
+  width: 30%;
+}
+
+.nav-wrapper ul {
+  list-style-type: none;
+  display: flex;
+}
+.nav-wrapper ul li {
+  margin-left: 10px;
+}
+.nav-wrapper ul li:first-child {
+  margin-left: 10px;
+}
+.nav-wrapper ul li a {
+  text-decoration: none;
+}
+
+/* Estilos para .nav-right */
+.nav-right {
+  background-color: darkblue;
+  font-size: small;
+  padding: 0;
+  position: fixed;
+  width: auto;
+  transform: translateX(50%);
+  /* Ajustar para centrar exactamente */
+  /* Media queries para hacer el nav responsive */
+}
+@media (max-width: 600px) {
+  .nav-right {
+    width: 270px;
+    font-size: 0.7em;
+    /* Ajusta el tamaño de fuente */
+  }
+}
+
+main ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+main ul li {
+  display: inline-block;
+  margin: 10px 150px;
+}
+main ul li img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+main #carousel {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+main #carousel > div {
+  display: inline-block;
+  margin: 10px 30px;
+}
+main #carousel > div img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+main #carousel2 {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+main #carousel2 > div {
+  display: inline-block;
+  max-width: 40%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+.grid-item {
+  width: 300px;
+  height: 300px;
+  border-radius: 30%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 2px solid #45a049;
+  display: block;
+  margin: 0 auto;
+  object-fit: cover;
+}
+@media (max-width: 450px) {
+  .grid-item {
+    width: 100px;
+    height: 100px;
+    border-radius: 10%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 2px solid #45a049;
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+  }
+}
+@media (min-width: 450px) and (max-width: 600px) {
+  .grid-item {
+    width: 150px;
+    height: 150px;
+    border-radius: 15%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 2px solid #45a049;
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+  }
+}
+@media (min-width: 601px) and (max-width: 1200px) {
+  .grid-item {
+    width: 200px;
+    height: 200px;
+    border-radius: 20%;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+    border: 2px solid #45a049;
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+  }
+}
+@media (min-width: 1201px) {
+  .grid-item {
+    width: 300px;
+    height: 300px;
+    border-radius: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid #45a049;
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px; /* Altura del footer */
+  background-color: #333;
+  color: white;
+  border-radius: 5%;
+  margin-top: 2%;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  /* Estilos para dispositivos móviles */
+  body {
+    font-size: 14px;
+  }
+  header {
+    display: block;
+  }
+  header img {
+    width: 30px;
+  }
+  header h1 {
+    margin: 10px 0;
+    font-size: 18px;
+  }
+  nav {
+    padding: 5px;
+    background-color: #45a049;
+  }
+  nav ul {
+    display: none;
+  }
+  .nav-container {
+    display: none;
+  }
+  #menu-icon {
+    display: block;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+  }
+  #menu-icon:hover + ul,
+  nav:hover ul {
+    display: block;
+  }
+  nav ul li {
+    display: block;
+    margin: 5px 0;
+  }
+  main ul li {
+    margin: 10px 20px;
+  }
+  main ul li img {
+    width: 100%;
+    margin: 0;
+  }
+  .texto-superpuesto {
+    display: none;
+  }
+  .grid-container-SERV {
+    grid-template-columns: 1fr;
+  }
+  .grid-item img {
+    max-width: auto;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  /* Estilos para tabletas */
+  .grid-container-SERV {
+    grid-template-columns: 1fr;
+  }
+  .grid-item img {
+    max-width: 30%;
+  }
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  color: #333;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  white-space: nowrap;
+}
+
+.dropdown-content a:hover {
+  background-color: white;
+}
+
+/* Estilos para los iconos de INDEX */
+.iconos-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.iconos-container .icono {
+  flex: 1;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  /* Añade una transición para el contenedor del icono */
+}
+.iconos-container .icono img {
+  width: 50px;
+  /* Tamaño inicial del icono */
+  height: auto;
+  margin-top: 15%;
+  transition: transform 0.3s ease-in-out;
+  /* Añade una transición para la imagen */
+}
+.iconos-container .icono p {
+  margin-top: 10px;
+}
+.iconos-container .icono:hover img {
+  transform: scale(1.5);
+  /* Escala el icono al 150% de su tamaño original */
+}
+
+/* Para contacto */
+.main_contacto {
+  width: 80%;
+  margin: 50px auto;
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el contenedor del video de Sustentabilidad*/
+.video-container {
+  position: relative;
+  width: 100%;
+}
+
+/* Estilos para el video */
+video {
+  width: 100%;
+  height: auto;
+}
+
+/* Estilos para el texto superpuesto */
+.texto-superpuesto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 24px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-align: center;
+  opacity: 0;
+  /* Inicialmente invisible */
+  animation: aparecer 3s forwards;
+  /* Animación de entrada */
+}
+
+/* Animación de entrada */
+@keyframes aparecer {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Grid para las imágenes de personas en Nuestra Vision */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+  /* Espacio entre las imágenes */
+  padding: 60px;
+  margin: 0 100px 0 100px;
+}
+
+.section_caja {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.caja {
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #45a049;
+  width: 60%;
+  text-align: center;
+  position: relative;
+  left: 20%;
+}
+
+.grid-container-SERV {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.grid-item-SERV {
+  padding: 10px;
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  max-width: auto;
+  text-align: center;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+}
+
+.grid-item img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  text-align: center;
+}
+
+/* contador seguridad*/
+.counter {
+  border: 2px solid #45a049;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 70px;
+}
+
+/* Estilos del icono de hamburguesa */
+.menu-icon {
+  display: none;
+}
+
+/* Para iframe responsive*/
+.iframe-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* Aspect ratio 16:9 */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background: #f9f9f9;
+  /* Optional: Adds a background color */
+  margin: 0 auto;
+}
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Logos clientes y animacion*/
+.clientes-section {
+  padding: 50px;
+  text-align: center;
+}
+
+.clientes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+}
+
+.cliente-logo {
+  max-width: 100px;
+  opacity: 0; /* Comienza invisible */
+}
+
+/* Personalizar botones del carrousel de "acerca de" */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #000; /* Color de fondo negro */
+  border-radius: 50%; /* Hacer los iconos redondos */
+  width: 50px;
+  height: 50px;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  background-color: #ff0000; /* Color de fondo rojo al pasar el mouse */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  filter: drop-shadow(2px 2px 5px #000); /* Sombra para hacerlos más visibles */
+}
+
+/* Animacion Obras iconicas */
+.animate__animated.animate__flash {
+  --animate-duration: 5s;
+}
+
+.nav-container, .nav-right {
+  display: flex;
+  justify-content: center;
+}
+
+form input[type=text],
+form select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+form input[type=submit] {
+  background-color: #45a049;
+  color: white;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+form input[type=submit]:hover {
+  background-color: #367c39;
+}
+
+/* Estilos para el form */
+form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+form p {
+  margin-bottom: 10px;
+}
+form input[type=submit] {
+  width: auto;
+  padding: 5px 20px;
+}
+form input,
+form textarea {
+  margin-bottom: 10px;
+  width: 80%;
+  padding: 5px;
+}
+
+/* Caja fixed para reporte de acontecimientos de Seguridad */
+.box {
+  position: fixed;
+  margin-top: 5%;
+  top: 0;
+  right: 0;
+  width: 20%;
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=styles.css.map */
