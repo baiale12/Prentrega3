@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
 
     .icono {
         flex: 1;
@@ -12,7 +12,7 @@
         /* Añade una transición para el contenedor del icono */
 
         img {
-            width: 100px;
+            width: 50px;
             /* Tamaño inicial del icono */
             height: auto;
             margin-top: 15%;
@@ -122,10 +122,19 @@ video {
 
 }
 
+.grid-container {
+    display: grid;
+    max-width: auto;
+    text-align: center;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;     /* Centra verticalmente */
+}
+
 .grid-item img {
-    width: 30%;
+    max-width: 100%;
     height: auto;
     display: block;
+    text-align: center
 }
 
 

@@ -111,7 +111,7 @@ main #carousel {
 }
 main #carousel > div {
   display: inline-block;
-  margin: 10px 150px;
+  margin: 10px 30px;
 }
 main #carousel > div img {
   max-width: 100%;
@@ -127,7 +127,7 @@ main #carousel2 {
 }
 main #carousel2 > div {
   display: inline-block;
-  max-width: 30%;
+  max-width: 40%;
   height: auto;
   display: block;
   margin: auto;
@@ -259,7 +259,7 @@ footer {
     grid-template-columns: 1fr;
   }
   .grid-item img {
-    width: 30px;
+    max-width: auto;
   }
 }
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
@@ -268,7 +268,7 @@ footer {
     grid-template-columns: 1fr;
   }
   .grid-item img {
-    width: 40px;
+    max-width: 30%;
   }
 }
 .dropdown {
@@ -306,7 +306,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 10px;
 }
 .iconos-container .icono {
   flex: 1;
@@ -315,7 +315,7 @@ footer {
   /* Añade una transición para el contenedor del icono */
 }
 .iconos-container .icono img {
-  width: 100px;
+  width: 50px;
   /* Tamaño inicial del icono */
   height: auto;
   margin-top: 15%;
@@ -416,10 +416,19 @@ video {
   text-align: center;
 }
 
+.grid-container {
+  display: grid;
+  max-width: auto;
+  text-align: center;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+}
+
 .grid-item img {
-  width: 30%;
+  max-width: 100%;
   height: auto;
   display: block;
+  text-align: center;
 }
 
 /* contador seguridad*/
