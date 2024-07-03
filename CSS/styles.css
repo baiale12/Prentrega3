@@ -386,7 +386,10 @@ video {
   gap: 10px;
   /* Espacio entre las imágenes */
   padding: 60px;
-  margin: 0 100px 0 100px;
+  max-width: auto;
+  text-align: center;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
 }
 
 .section_caja {
@@ -414,14 +417,6 @@ video {
 .grid-item-SERV {
   padding: 10px;
   text-align: center;
-}
-
-.grid-container {
-  display: grid;
-  max-width: auto;
-  text-align: center;
-  justify-content: center; /* Centra horizontalmente */
-  align-items: center; /* Centra verticalmente */
 }
 
 .grid-item img {
