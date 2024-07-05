@@ -4,9 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contreras es una empresa especializada en la construcción de ductos, plantas de gas, y almacenamiento de petróleo, comprometida con la seguridad, sustentabilidad y la excelencia bajo el estándar ISO 9001.">
-    <meta name="keywords" content="Contreras, ductos, compresoras, equipos, plantas de gas, almacenamiento de petróleo, ISO 9001, seguridad, sustentabilidad">
+    <meta name="description"
+        content="Contreras es una empresa especializada en la construcción de ductos, plantas de gas, y almacenamiento de petróleo, comprometida con la seguridad, sustentabilidad y la excelencia bajo el estándar ISO 9001.">
+    <meta name="keywords"
+        content="Contreras, ductos, compresoras, equipos, plantas de gas, almacenamiento de petróleo, ISO 9001, seguridad, sustentabilidad">
     <title>Contreras - Construcción de Ductos, Plantas de Gas y Obras de Infraestructura</title>
+    <link rel="icon" href=".multimedia\favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./CSS/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +20,9 @@
 <body>
     <header>
         <img src="./multimedia/contreras-logo.png" alt="Logo de la empresa">
-        <h1>Contreras</h1>
+        <a href="./index.html">
+            <h1>Contreras</h1>
+        </a>
     </header>
 
     <nav>
@@ -28,11 +33,11 @@
             <li class="dropdown">
                 <a href="./index.html">Inicio</a>
                 <div class="dropdown-content">
-                  <a href="./pages/sustentabilidad.html">Mision</a>
-                  <a href="./pages/historia.html">Historia</a>
-                  <a href="./pages/seguridad.html">Seguridad</a>
+                    <a href="./pages/sustentabilidad.html">Mision</a>
+                    <a href="./pages/historia.html">Historia</a>
+                    <a href="./pages/seguridad.html">Seguridad</a>
                 </div>
-              </li>
+            </li>
             <li><a href="./pages/acerca.html">Acerca de</a></li>
             <li><a href="./pages/servicios.html">Servicios</a></li>
             <li><a href="./pages/ubicacion.html">Ubicación</a></li>
@@ -66,7 +71,7 @@
         // Carrusel de imágenes
         let slideIndex = 0;
         carousel();
-    
+
         function carousel() {
             let i;
             let slides = document.querySelectorAll("#carousel > div");
@@ -107,7 +112,7 @@
 
     <footer>
         <p>Todas las obras de la empresa son certificadas bajo estándar <strong>ISO 9001</strong> </p>
-        <p>/    <em>Derechos reservados</em> </p>
+        <p>/ <em>Derechos reservados</em> </p>
     </footer>
 </body>
 

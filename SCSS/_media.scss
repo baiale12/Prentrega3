@@ -5,16 +5,12 @@
         font-size: map-get($font-sizes, verysmall);
     }
 
-    header {
-        display: block;
-    }
-
     header img {
         width: 30px;
     }
 
     header h1 {
-        margin: 10px 0;
+        margin: 5px 5px;
         font-size: map-get($font-sizes, notthatsmall);
     }
 
